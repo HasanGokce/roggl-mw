@@ -1,0 +1,92 @@
+
+
+### 1 create
+
+
+POST http://localhost:4001/boards HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Learn Guitar 6"
+}
+
+
+### 2 create
+
+
+POST http://localhost:4001/boards HTTP/1.1
+content-type: application/json
+
+{
+    "name": "abcde",
+    "content": "Lorem Ipsum is Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum is"
+}
+
+
+### 3 create
+
+
+POST http://localhost:4001/boards HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "6006f8e357638c51a36a59c3",
+    "name": "Learn Laravel x",
+    "key": "jwsadsads"
+}
+
+
+### 4 read
+
+
+GET http://localhost:4001/boards HTTP/1.1
+
+
+### 5 update
+
+
+PUT http://localhost:4001/boards HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "60200f8bc04d9027842aa144",
+    "name": "New Category"
+}
+
+
+### 6
+
+
+DELETE http://localhost:4001/boards/adsa HTTP/1.1
+content-type: application/json
+
+
+### 7
+
+DELETE http://localhost:4001/boards/60204a23bbf07269d0fdcb92 HTTP/1.1
+content-type: application/json
+
+
+### 10
+
+POST http://localhost:4001/boards/columns HTTP/1.1
+content-type: application/json
+
+{
+    "owner_id": "6006f8e357638c51a36a59c3",
+    "board_id": "6023d97b45fa21283c937a26",
+    "title": "Beautiful 1",
+    "content": "World"
+}
+
+### 11
+GET http://localhost:4001/boards/columns HTTP/1.1
+
+### 12 Columns Update
+PUT http://localhost:4001/boards/columns HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "60243ebbe28a4355ccdb257a",
+    "content": "New Category5"
+}
